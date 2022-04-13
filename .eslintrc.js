@@ -28,10 +28,6 @@ module.exports = {
         "component": "always"
       }
     }],
-    "vue/multi-word-component-names": ["error", {
-      "ignores": [
-        "Home", "About"
-      ]
-    }]
+    "vue/multi-word-component-names": 0
   }
 };

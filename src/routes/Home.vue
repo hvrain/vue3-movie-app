@@ -1,3 +1,16 @@
 <template>
-  <h1>Home!</h1>
+  <HeadLine />
+  <Search />
 </template>
+
+<script>
+import HeadLine from "~/components/HeadLine.vue"
+import Search from "~/components/Search.vue"
+
+export default {
+  components: {
+    HeadLine,
+    Search 
+  }
+}
+</script>
