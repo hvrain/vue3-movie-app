@@ -9,12 +9,12 @@ export default createRouter({
   // Hash or History, we use Hash type
   // https://google.com/#/search
   history: createWebHashHistory(),
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(savedPosition) {
     if (savedPosition) {
       return savedPosition
     }
     else {
-      return { top: 0, el: to.hash }
+      return { top: 0 }
     }
   },
   // pages
