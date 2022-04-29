@@ -26,8 +26,8 @@ export default {
     },
     resetMovies(state) {
       state.movies = [];
-      // state.message = _defaultMessage;
-      // state.loading = false;
+      state.message = _defaultMessage;
+      state.loading = false;
     },
   },
   // methods!

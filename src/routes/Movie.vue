@@ -105,9 +105,10 @@ export default {
         return '';
       }
       const src = url.replace('SX300', `SX${size}`);
-      this.$loadImage(src).then(() => {
-        this.imageLoading = false;
-      })
+      this.$loadImage(src)
+        .then(() => {
+          this.imageLoading = false;
+        })
       return src
     },
   }

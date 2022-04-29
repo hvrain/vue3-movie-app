@@ -6,6 +6,8 @@ module.exports = {
     browser: true,
     commonjs: true,
     node: true,
+    jest: true,
+    'cypress/globals': true
   },
   extends: [
     //vue
@@ -13,7 +15,9 @@ module.exports = {
     //js
     "eslint:recommended",
   ],
-  plugins: [], 
+  plugins: [
+    'cypress'
+  ], 
   parserOptions: {
     ecmaVersion: 12,
     parser: "@babel/eslint-parser",
